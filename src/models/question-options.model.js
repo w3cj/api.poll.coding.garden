@@ -19,6 +19,10 @@ module.exports = function (app) {
       type: Schema.Types.ObjectId,
       ref: 'users',
       required: true
+    },
+    archived: {
+      type: Boolean,
+      default: false
     }
   }, {
     timestamps: true
