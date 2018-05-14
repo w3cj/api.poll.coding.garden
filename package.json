@@ -26,7 +26,8 @@
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "start": "node src/",
     "mocha": "mocha test/ --recursive --exit",
-    "dev": "nodemon src/"
+    "dev": "nodemon src/",
+    "deploy": "now -e NODE_ENV=production -e GOOGLE_CLIENT_ID=@poll-google-id -e GOOGLE_CLIENT_SECRET=@poll-google-secret -e AUTH_SECRET=@poll-auth-secret -e MONGODB_URI=@poll-db"
   },
   "dependencies": {
     "@feathersjs/authentication": "^2.1.1",
